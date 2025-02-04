@@ -8144,11 +8144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\todo\\ToDo.csproj",
+      "projectUniqueName": "C:\\Projetos\\ToDo\\ToDo.csproj",
       "projectName": "ToDo",
-      "projectPath": "C:\\Projetos\\todo\\ToDo.csproj",
+      "projectPath": "C:\\Projetos\\ToDo\\ToDo.csproj",
       "packagesPath": "C:\\Users\\juver\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\todo\\obj\\",
+      "outputPath": "C:\\Projetos\\ToDo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

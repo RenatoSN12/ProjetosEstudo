@@ -299,3 +299,4 @@ C:\Projetos\todo\obj\Debug\net9.0\refint\ToDo.dll
 C:\Projetos\todo\obj\Debug\net9.0\ToDo.pdb
 C:\Projetos\todo\obj\Debug\net9.0\ToDo.genruntimeconfig.cache
 C:\Projetos\todo\obj\Debug\net9.0\ref\ToDo.dll
+C:\Projetos\ToDo\obj\Debug\net9.0\ToDo.sourcelink.json
