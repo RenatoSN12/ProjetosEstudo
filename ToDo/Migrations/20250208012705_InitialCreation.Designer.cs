@@ -12,8 +12,8 @@ using ToDo.Data;
 namespace ToDo.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250204224425_NewTablesAndCorrections")]
-    partial class NewTablesAndCorrections
+    [Migration("20250208012705_InitialCreation")]
+    partial class InitialCreation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -76,7 +76,7 @@ namespace ToDo.Migrations
 
                     b.HasIndex("TaskId");
 
-                    b.ToTable("Attachment", (string)null);
+                    b.ToTable("Attachments", (string)null);
                 });
 
             modelBuilder.Entity("ToDo.Models.Tag", b =>
@@ -144,7 +144,7 @@ namespace ToDo.Migrations
                     b.HasIndex("Title")
                         .HasDatabaseName("IX_Task_Title");
 
-                    b.ToTable("Task", (string)null);
+                    b.ToTable("Tasks", (string)null);
                 });
 
             modelBuilder.Entity("ToDo.Models.User", b =>
@@ -162,7 +162,7 @@ namespace ToDo.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User", (string)null);
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("TagTask", b =>

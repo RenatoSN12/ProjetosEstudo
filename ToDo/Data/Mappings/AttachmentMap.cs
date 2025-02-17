@@ -8,7 +8,7 @@ public class AttachmentMap : IEntityTypeConfiguration<Attachment>
 {
     public void Configure(EntityTypeBuilder<Attachment> builder)
     {
-        builder.ToTable("Attachment");
+        builder.ToTable("Attachments");
 
         builder.HasKey(x => x.Id);
         

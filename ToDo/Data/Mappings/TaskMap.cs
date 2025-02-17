@@ -8,7 +8,7 @@ public class TaskMap : IEntityTypeConfiguration<Task>
 {
     public void Configure(EntityTypeBuilder<Task> builder)
     {
-        builder.ToTable("Task");
+        builder.ToTable("Tasks");
         
         builder.HasKey(x => x.Id);
         

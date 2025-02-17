@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ToDo.Migrations
 {
     /// <inheritdoc />
-    public partial class NewTablesAndCorrections : Migration
+    public partial class InitialCreation : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -26,7 +26,7 @@ namespace ToDo.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "User",
+                name: "Users",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -35,11 +35,11 @@ namespace ToDo.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_User", x => x.Id);
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Task",
+                name: "Tasks",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -55,17 +55,17 @@ namespace ToDo.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Task", x => x.Id);
+                    table.PrimaryKey("PK_Tasks", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Task_User_AssignedUserId",
+                        name: "FK_Tasks_Users_AssignedUserId",
                         column: x => x.AssignedUserId,
-                        principalTable: "User",
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Attachment",
+                name: "Attachments",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -79,11 +79,11 @@ namespace ToDo.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Attachment", x => x.Id);
+                    table.PrimaryKey("PK_Attachments", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Attachment_Task_TaskId",
+                        name: "FK_Attachments_Tasks_TaskId",
                         column: x => x.TaskId,
-                        principalTable: "Task",
+                        principalTable: "Tasks",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -105,32 +105,32 @@ namespace ToDo.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_TaskTags_Task_TaskId",
+                        name: "FK_TaskTags_Tasks_TaskId",
                         column: x => x.TaskId,
-                        principalTable: "Task",
+                        principalTable: "Tasks",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Attachment_TaskId",
-                table: "Attachment",
+                name: "IX_Attachments_TaskId",
+                table: "Attachments",
                 column: "TaskId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Task_AssignedUserId",
-                table: "Task",
-                column: "AssignedUserId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Task_Done",
-                table: "Task",
+                table: "Tasks",
                 column: "Done");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Task_Title",
-                table: "Task",
+                table: "Tasks",
                 column: "Title");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Tasks_AssignedUserId",
+                table: "Tasks",
+                column: "AssignedUserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TaskTags_TaskId",
@@ -142,7 +142,7 @@ namespace ToDo.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Attachment");
+                name: "Attachments");
 
             migrationBuilder.DropTable(
                 name: "TaskTags");
@@ -151,10 +151,10 @@ namespace ToDo.Migrations
                 name: "Tags");
 
             migrationBuilder.DropTable(
-                name: "Task");
+                name: "Tasks");
 
             migrationBuilder.DropTable(
-                name: "User");
+                name: "Users");
         }
     }
 }
