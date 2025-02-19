@@ -1,0 +1,14 @@
+@page "/categories/create"
+@using BlazorShop.Models
+
+<h1>Nova categoria</h1>
+<EditForm Model="@Model">
+    <InputText @bindbind-Value="Model.Title"/>
+</EditForm>
+
+@code {
+
+    public Category Model { get; set; } = new();
+
+    
+}
