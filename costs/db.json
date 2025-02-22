@@ -1,14 +1,62 @@
 {
   "projects": [
     {
-      "id": "8c40",
-      "name": "Renato Souza do Nascimento",
-      "budget": "20000",
+      "id": "c0e5",
+      "name": "notion do erick",
+      "budget": "3000132",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "4",
+        "name": "Planejamento"
       },
-      "cost": 0,
+      "cost": 5387,
+      "services": [
+        {
+          "name": "Renato Souza do Nascimento",
+          "cost": "1000",
+          "description": "Desenvolvedor",
+          "id": "01e458d5-7f0e-4971-a1a5-f964bdec2c4b"
+        },
+        {
+          "name": "Renato Souza do Nascimento",
+          "cost": "1000",
+          "description": "Desenvolvedor",
+          "id": "01e458d5-7f0e-4971-a1a5-f964bdec2c4b"
+        },
+        {
+          "name": "Renato Souza do Nascimento",
+          "cost": "1000",
+          "description": "Desenvolvedor",
+          "id": "01e458d5-7f0e-4971-a1a5-f964bdec2c4b"
+        },
+        {
+          "name": "Renato Souza do Nascimento",
+          "cost": "1000",
+          "description": "Desenvolvedor",
+          "id": "01e458d5-7f0e-4971-a1a5-f964bdec2c4b"
+        },
+        {
+          "name": "Renato Souza do Nascimento",
+          "cost": "1232",
+          "description": "Desenvolvedor",
+          "id": "575df653-29ae-4060-9871-a298b5433776"
+        },
+        {
+          "name": "DSAASD",
+          "cost": "32",
+          "description": "SDA",
+          "id": "96ee8235-a67a-4aca-93b8-aef274d0e42a"
+        }
+      ]
+    },
+    {
+      "id": "556c",
+      "name": "notion do erick",
+      "budget": "213123",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 2000,
       "services": []
     }
   ],

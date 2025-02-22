@@ -56,8 +56,8 @@ function Projects(){
                 <h1>Meus Projetos</h1>
                 <LinkButton to="/newproject" text="Criar Projeto"/>
             </div>
-            {message && <Message type="sucess" msg={message}/>}
-            {projectMessage && <Message type="sucess" msg={projectMessage}/>}
+            {message && <Message type="success" msg={message}/>}
+            {projectMessage && <Message type="success" msg={projectMessage}/>}
             <Container customClass='start'>
                 {projects.length > 0 && (
                     projects.map((project) => (
@@ -72,7 +72,7 @@ function Projects(){
                     ))
                 )}
                 {!removeLoader && <Loading/>}
-                {removeLoader && projects.length == 0 && (
+                {removeLoader && projects.length === 0 && (
                     <p>Não há projetos cadastrados.</p>
                 )}
             </Container>
