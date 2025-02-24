@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.header h1 {
+  color: #fff;
+}
+
+.menuIcon {
+  display: none;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  max-height: 100px;
+  opacity: 1;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.logo :hover {
+  cursor: pointer;
+}
+
+.logoHidden {
+  max-height: 0; /* Reduz a altura para 0 */
+  opacity: 0; /* Torna o elemento transparente */
+}
+
+.logo p {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block
+  }
+
+}

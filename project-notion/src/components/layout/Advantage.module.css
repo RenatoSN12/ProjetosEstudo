@@ -1,0 +1,33 @@
+.Advantage {
+    display: flex;
+    margin-top: 3em;
+    align-items: center;
+    padding: 7em;
+}
+
+.Info {
+    width: 45%;
+}
+
+.Info h2 {
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+.Info p {
+    font-size: 1.4em;
+}
+
+img {
+    margin-left: 2em;
+    width: 55%;
+    border-radius: 1em;
+}
+
+.inverseImage {
+    margin-left: 0;
+    margin-right: 2em;
+}
+
+
+

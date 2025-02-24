@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body,
+#root {
+  background-color: #fffef8;
+  height: 100%
+}
+
+h1,
+h2 {
+  color: #333333;
+}
+
+p {
+  color: #666666;
+}

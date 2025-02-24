@@ -1,0 +1,45 @@
+.Welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10em;
+    height: 100vh;
+    padding: 0 7em;
+}
+
+.Welcome img {
+    width: 50%;
+    border-radius: 1em;
+}
+
+.Info {
+    width: 50%;
+}
+
+.Info h1 {
+    margin-bottom: .7em;
+    font-size: 3.3em;
+}
+
+.Info p {
+    margin-bottom: 2em;
+    font-size: 1.4em;
+}
+
+.Info button {
+    background-color: #007BFF;
+    border: none;
+    padding: 1em 2em;
+    color: #fff;
+    border-radius: 1em;
+    transition: transform 0.3s ease;
+    width: 12em;
+    height: 4em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.Info button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
