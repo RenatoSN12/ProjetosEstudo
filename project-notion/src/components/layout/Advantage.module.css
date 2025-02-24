@@ -1,27 +1,51 @@
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideLeft {
+    animation: slideFromLeft 1s ease-out forwards;
+    animation-delay: 200ms;
+}
+
+.slideRight {
+    animation: slideFromRight 1s ease-out forwards;
+    animation-delay: 200ms;
+}
+
 .Advantage {
     display: flex;
-    margin-top: 3em;
     align-items: center;
-    padding: 7em;
+    padding: 0 7em;
+    overflow: hidden;
 }
 
 .Info {
-    width: 45%;
+    width: 60%;
+    opacity: 0;
 }
 
-.Info h2 {
-    margin-bottom: 1em;
-    font-size: 3em;
-}
-
-.Info p {
-    font-size: 1.4em;
-}
-
-img {
-    margin-left: 2em;
-    width: 55%;
+.Advantage img {
+    width: 40%;
     border-radius: 1em;
+    opacity: 0;
 }
 
 .inverseImage {
@@ -29,5 +53,26 @@ img {
     margin-right: 2em;
 }
 
+.Info p {
+    font-size: 1.4em;
+}
 
+.Info h2 {
+    margin-bottom: 1em;
+    font-size: 3em;
+}
 
+@media (max-width: 768px) {
+    .Advantage img {
+        display: none;
+    }
+
+    .Advantage {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+        margin-left: 0;
+        padding: 0;
+    }
+
+}

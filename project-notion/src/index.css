@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 html,
@@ -12,11 +12,16 @@ body,
   height: 100%
 }
 
+:root {
+  --title-color: #333333;
+  --paragraph-white: #666666;
+}
+
 h1,
 h2 {
-  color: #333333;
+  color: var(--title-color);
 }
 
 p {
-  color: #666666;
+  color: var(--paragraph-white);
 }

@@ -1,29 +1,58 @@
+@keyframes slideUp {
+    from {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
 .Welcome {
+    margin-bottom: 10em;
+    height: 100vh;
+    background-image: url('../../img/welcome-image.png');
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10em;
-    height: 100vh;
-    padding: 0 7em;
-}
-
-.Welcome img {
-    width: 50%;
-    border-radius: 1em;
+    position: relative;
+    z-index: 1;
 }
 
 .Info {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    width: 100%;
+    height: 100%;
+    animation: slideUp 1s ease-out forwards;
+    animation-delay: 0.2s;
 }
 
 .Info h1 {
     margin-bottom: .7em;
-    font-size: 3.3em;
+    font-size: clamp(3.3em, 5vw, 4.5em);
+    font-weight: normal;
+    color: #fff
 }
 
 .Info p {
     margin-bottom: 2em;
-    font-size: 1.4em;
+    font-size: clamp(1.5em, 3vw, 2em);
+    color: #fff
+}
+
+.Info span {
+    font-weight: bold;
+}
+
+.Info {
+    width: 50%;
 }
 
 .Info button {

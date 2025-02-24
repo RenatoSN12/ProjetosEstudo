@@ -7,6 +7,7 @@ import ThirdImage from '../../img/third-advantage.png'
 import styles from './Home.module.css'
 
 function Home() {
+
     return (
         <main className={styles.Home}>
             <Welcome/>
