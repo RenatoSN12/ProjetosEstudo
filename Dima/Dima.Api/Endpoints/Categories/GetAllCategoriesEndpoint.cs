@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using Dima.Api.Common.Api;
 using Dima.Core;
 using Dima.Core.Handlers;
@@ -21,6 +22,7 @@ public class GetAllCategoriesEndpoint : IEndpoint
     }
     
     private static async Task<IResult> HandleAsync(ICategoryHandler handler,
+        ClaimsPrincipal user,
         [FromQuery] int pageNumber = Configuration.DefaultPageNumber,
         [FromQuery] int pageSize = Configuration.DefaultPageSize)
     {
@@ -28,7 +30,7 @@ public class GetAllCategoriesEndpoint : IEndpoint
         {
             PageNumber = pageNumber,
             PageSize = pageSize,
-            UserId = "natosouza12@gmail.com"
+            UserId = user.Identity?.Name ?? string.Empty,
         };
         
         var result = await handler.GetAllAsync(request);

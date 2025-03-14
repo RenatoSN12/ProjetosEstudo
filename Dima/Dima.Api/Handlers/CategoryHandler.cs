@@ -87,7 +87,7 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
             var category = await context
                 .Categories
                 .AsNoTracking()
-                .FirstOrDefaultAsync(x => x.Id == request.Id);
+                .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
 
             return category is null
                 ? new Response<Category?>(null, code: 404, "Categoria não encontrada.")

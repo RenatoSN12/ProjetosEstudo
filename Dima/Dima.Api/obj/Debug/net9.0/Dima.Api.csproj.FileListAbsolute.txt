@@ -9,6 +9,9 @@ C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Dima.Api.pdb
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Azure.Core.dll
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Azure.Identity.dll
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Humanizer.dll
+C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.Build.Locator.dll
@@ -30,6 +33,8 @@ C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Ab
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Projetos\Dima\Dima.Api\bin\Debug\net9.0\Microsoft.Extensions.Options.dll

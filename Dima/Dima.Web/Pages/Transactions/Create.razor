@@ -1,0 +1,80 @@
+@page "/lancamentos/novo"
+@inherits CreateTransactionPage
+
+<MudText Typo="Typo.h3">Novo Lançamento</MudText>
+
+@if (IsBusy)
+{
+    <MudPaper>
+        <MudSkeleton Height="110px"/>
+        <MudSkeleton Height="55px"/>
+        <MudSkeleton Height="110px"/>
+        <MudSkeleton Height="55px"/>
+        <MudSkeleton Height="110px"/>
+        <MudSkeleton Height="55px"/>
+    </MudPaper>
+}
+else
+{
+    <MudPaper Class="pa-8 mt-4">
+        <EditForm Model="@InputModel" OnValidSubmit="OnValidSubmitAsync">
+            <DataAnnotationsValidator/>
+            
+            <MudTextField 
+                Label="Título"
+                HelperText="Campo obrigatório"
+                @bind-Value="InputModel.Title"
+                For="@(() => InputModel.Title)"
+            />
+
+            <MudTextField
+                Label="Valor"
+                T = "decimal"
+                Format="C"
+                Variant="Variant.Text"
+                HelperText="Informe o valor que será pago ou recebido."
+                @bind-Value="InputModel.Amount"
+                For="@(() => InputModel.Amount)"
+            />
+            
+            <MudDatePicker
+                Label="Data"
+                @bind-Date="@InputModel.PaidOrReceivedAt"
+                HelperText="Selecione a data que o valor será pago ou recebido."
+            />
+            
+            <MudSelect
+                T="ETransactionType"
+                Label="Tipo de Movimentação"
+                AnchorOrigin="Origin.BottomLeft"
+                @bind-Value="InputModel.Type">
+                <MudSelectItem T="ETransactionType" Value="ETransactionType.Deposit">
+                    Entrada
+                </MudSelectItem>
+                <MudSelectItem T="ETransactionType" Value="ETransactionType.Withdraw">
+                    Saida
+                </MudSelectItem>
+            </MudSelect>
+            
+            <MudSelect
+                T="long"
+                Label="Categoria"
+                AnchorOrigin="Origin.BottomLeft"
+                @bind-Value="InputModel.CategoryId">
+                @foreach (var category in Categories)
+                {
+                    <MudSelectItem T="long" Value="category.Id">@category.Title</MudSelectItem>
+                }
+            </MudSelect>
+            
+            <MudButton
+                ButtonType="ButtonType.Submit"
+                Variant="Variant.Filled"
+                Color="Color.Primary"
+                Class="mt-4">
+                Salvar
+            </MudButton>
+            
+        </EditForm>
+    </MudPaper>
+}
