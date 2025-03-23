@@ -1,0 +1,12 @@
+C:\Projetos\Stock\Stock.Domain\bin\Debug\net9.0\Stock.Domain.deps.json
+C:\Projetos\Stock\Stock.Domain\bin\Debug\net9.0\Stock.Domain.dll
+C:\Projetos\Stock\Stock.Domain\bin\Debug\net9.0\Stock.Domain.pdb
+C:\Projetos\Stock\Stock.Domain\obj\Debug\net9.0\Stock.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Stock\Stock.Domain\obj\Debug\net9.0\Stock.Domain.AssemblyInfoInputs.cache
+C:\Projetos\Stock\Stock.Domain\obj\Debug\net9.0\Stock.Domain.AssemblyInfo.cs
+C:\Projetos\Stock\Stock.Domain\obj\Debug\net9.0\Stock.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\Stock\Stock.Domain\obj\Debug\net9.0\Stock.Domain.sourcelink.json
+C:\Projetos\Stock\Stock.Domain\obj\Debug\net9.0\Stock.Domain.dll
+C:\Projetos\Stock\Stock.Domain\obj\Debug\net9.0\refint\Stock.Domain.dll
+C:\Projetos\Stock\Stock.Domain\obj\Debug\net9.0\Stock.Domain.pdb
+C:\Projetos\Stock\Stock.Domain\obj\Debug\net9.0\ref\Stock.Domain.dll

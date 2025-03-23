@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3mhldXceAcc=",
+  "success": true,
+  "projectFilePath": "C:\\Projetos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\juver\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
