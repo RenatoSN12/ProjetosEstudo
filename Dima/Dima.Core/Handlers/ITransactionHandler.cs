@@ -1,5 +1,5 @@
 using Dima.Core.Models;
-using Dima.Core.Requests.Responses;
+using Dima.Core.Responses;
 using Dima.Core.Requests.Transactions;
 
 namespace Dima.Core.Handlers;

@@ -3,7 +3,7 @@ using Dima.Api.Common.Api;
 using Dima.Core.Handlers;
 using Dima.Core.Models.Reports;
 using Dima.Core.Requests.Reports;
-using Dima.Core.Requests.Responses;
+using Dima.Core.Responses;
 
 namespace Dima.Api.Endpoints.Reports;
 

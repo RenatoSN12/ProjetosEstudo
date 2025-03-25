@@ -2,7 +2,7 @@ using System.Net.Http.Json;
 using Dima.Core.Common.Extensions;
 using Dima.Core.Handlers;
 using Dima.Core.Models;
-using Dima.Core.Requests.Responses;
+using Dima.Core.Responses;
 using Dima.Core.Requests.Transactions;
 
 namespace Dima.Web.Handlers;

@@ -1,6 +1,6 @@
 using Dima.Core.Models;
 using Dima.Core.Requests.Categories;
-using Dima.Core.Requests.Responses;
+using Dima.Core.Responses;
 
 namespace Dima.Core.Handlers;
 

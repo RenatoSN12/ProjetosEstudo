@@ -3,7 +3,7 @@ using Dima.Core.Enums;
 using Dima.Core.Handlers;
 using Dima.Core.Models.Reports;
 using Dima.Core.Requests.Reports;
-using Dima.Core.Requests.Responses;
+using Dima.Core.Responses;
 using Microsoft.EntityFrameworkCore;
 
 namespace Dima.Api.Handlers;

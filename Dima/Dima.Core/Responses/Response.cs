@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Dima.Core.Requests.Responses;
+namespace Dima.Core.Responses;
 
 public class Response<TData>
 {

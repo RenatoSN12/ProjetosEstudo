@@ -4,7 +4,7 @@ using Dima.Core;
 using Dima.Core.Handlers;
 using Dima.Core.Models;
 using Dima.Core.Requests.Categories;
-using Dima.Core.Requests.Responses;
+using Dima.Core.Responses;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dima.Api.Endpoints.Categories;

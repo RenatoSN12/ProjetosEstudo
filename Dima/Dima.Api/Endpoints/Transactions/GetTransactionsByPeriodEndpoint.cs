@@ -3,7 +3,7 @@ using Dima.Api.Common.Api;
 using Dima.Core;
 using Dima.Core.Handlers;
 using Dima.Core.Models;
-using Dima.Core.Requests.Responses;
+using Dima.Core.Responses;
 using Dima.Core.Requests.Transactions;
 using Microsoft.AspNetCore.Mvc;
 
