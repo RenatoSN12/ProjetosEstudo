@@ -1,0 +1,16 @@
+C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\StockApp.Application.deps.json
+C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\StockApp.Application.dll
+C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\StockApp.Application.pdb
+C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\StockApp.Domain.dll
+C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\StockApp.Domain.pdb
+C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\StockApp.Application.csproj.AssemblyReference.cache
+C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\StockApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\StockApp.Application.AssemblyInfoInputs.cache
+C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\StockApp.Application.AssemblyInfo.cs
+C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\StockApp.Application.csproj.CoreCompileInputs.cache
+C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\StockApp.Application.sourcelink.json
+C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\StockApp.20574D84.Up2Date
+C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\StockApp.Application.dll
+C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\refint\StockApp.Application.dll
+C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\StockApp.Application.pdb
+C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\ref\StockApp.Application.dll

@@ -1,0 +1,12 @@
+C:\Projetos\StockApp\StockApp.Domain\bin\Debug\net9.0\StockApp.Domain.deps.json
+C:\Projetos\StockApp\StockApp.Domain\bin\Debug\net9.0\StockApp.Domain.dll
+C:\Projetos\StockApp\StockApp.Domain\bin\Debug\net9.0\StockApp.Domain.pdb
+C:\Projetos\StockApp\StockApp.Domain\obj\Debug\net9.0\StockApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\StockApp\StockApp.Domain\obj\Debug\net9.0\StockApp.Domain.AssemblyInfoInputs.cache
+C:\Projetos\StockApp\StockApp.Domain\obj\Debug\net9.0\StockApp.Domain.AssemblyInfo.cs
+C:\Projetos\StockApp\StockApp.Domain\obj\Debug\net9.0\StockApp.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\StockApp\StockApp.Domain\obj\Debug\net9.0\StockApp.Domain.sourcelink.json
+C:\Projetos\StockApp\StockApp.Domain\obj\Debug\net9.0\StockApp.Domain.dll
+C:\Projetos\StockApp\StockApp.Domain\obj\Debug\net9.0\refint\StockApp.Domain.dll
+C:\Projetos\StockApp\StockApp.Domain\obj\Debug\net9.0\StockApp.Domain.pdb
+C:\Projetos\StockApp\StockApp.Domain\obj\Debug\net9.0\ref\StockApp.Domain.dll
