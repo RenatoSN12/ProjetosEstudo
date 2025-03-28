@@ -1,16 +1,25 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+<MudThemeProvider />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+<AuthorizeView>
+    <Authorized>
+        <MudDrawer Anchor="Anchor.Left" Variant="DrawerVariant.Responsive" @bind-Open="_isDrawerOpened"></MudDrawer>
+        <h1>Você tá autenticado</h1>
+    </Authorized>
+    <NotAuthorized>
+        <h1>Você não tá autenticado</h1>
+    </NotAuthorized>
+</AuthorizeView>
+
+
+@code {
+
+    private bool _isDrawerOpened = true;
+    
+    private void ToggleDrawer() 
+        => _isDrawerOpened = !_isDrawerOpened;
+}

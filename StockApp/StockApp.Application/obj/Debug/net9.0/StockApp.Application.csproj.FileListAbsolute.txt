@@ -1,7 +1,13 @@
 C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\StockApp.Application.deps.json
 C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\StockApp.Application.dll
 C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\StockApp.Application.pdb
+C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\Microsoft.AspNetCore.Http.Abstractions.dll
 C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\StockApp.Domain.dll
+C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\Microsoft.Extensions.Features.dll
+C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\Microsoft.Net.Http.Headers.dll
+C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\Projetos\StockApp\StockApp.Application\bin\Debug\net9.0\StockApp.Domain.pdb
 C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\StockApp.Application.csproj.AssemblyReference.cache
 C:\Projetos\StockApp\StockApp.Application\obj\Debug\net9.0\StockApp.Application.GeneratedMSBuildEditorConfig.editorconfig

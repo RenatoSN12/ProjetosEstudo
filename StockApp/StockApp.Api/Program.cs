@@ -6,14 +6,18 @@ using StockApp.Infrastructure;
 using StockApp.Infrastructure.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using StockApp.Api;
+using StockApp.Api.Common;
 using StockApp.Api.Endpoints;
 using StockApp.Application.UseCases.Authentication.Login;
 using StockApp.Application.UseCases.Authentication.Register;
 
 var builder = WebApplication.CreateBuilder(args);
-Configuration.ConnectionString =
-    builder.Configuration.GetConnectionString("DefaultConnection")
-    ?? throw new Exception("ConnectionString não encontrada");
+
+builder.AddConfiguration();
+builder.AddCrossOrigin();
+
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddDbContext<AppDbContext>(x =>
 {
@@ -28,7 +32,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LogoutPath = "/auth/logout";
         options.Cookie.HttpOnly = true;
         options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
-        options.ExpireTimeSpan = TimeSpan.FromHours(1);
+        options.ExpireTimeSpan = TimeSpan.FromHours(8);
         options.SlidingExpiration = true;
     });
 
@@ -52,6 +56,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(ApiConfiguration.CorsPolicyName);
 
 app.MapEndpoints();
 app.UseAuthentication();

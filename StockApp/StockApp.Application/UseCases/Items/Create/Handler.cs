@@ -1,5 +1,6 @@
 using MediatR;
 using StockApp.Domain.Abstractions;
+using StockApp.Domain.Abstractions.Interfaces;
 using StockApp.Domain.Entities;
 using StockApp.Domain.Repositories;
 

@@ -23,7 +23,6 @@ public class CookieAuthenticationStateProvider(IHttpClientFactory clientFactory)
         _isAuthenticated = false;
         var user = new ClaimsPrincipal(new ClaimsIdentity());
 
-        Console.WriteLine(JsonSerializer.Serialize(user));
         var userInfo = await GetUser();
         if(userInfo is null)
             return new AuthenticationState(user);

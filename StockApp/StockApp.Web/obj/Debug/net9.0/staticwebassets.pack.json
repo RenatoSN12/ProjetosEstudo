@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\StockApp.Web.styles.css"
     },
     {
+      "Id": "C:\\Projetos\\StockApp\\StockApp.Web\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
       "Id": "C:\\Projetos\\StockApp\\StockApp.Web\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "C:\\Projetos\\StockApp\\StockApp.Web\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Projetos\\StockApp\\StockApp.Web\\wwwroot\\imgs\\logo.png",
+      "PackagePath": "staticwebassets\\imgs\\logo.png"
     },
     {
       "Id": "C:\\Projetos\\StockApp\\StockApp.Web\\wwwroot\\index.html",

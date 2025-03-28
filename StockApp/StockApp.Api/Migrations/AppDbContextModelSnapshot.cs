@@ -203,17 +203,9 @@ namespace StockApp.Api.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("NVARCHAR");
 
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("NVARCHAR");
-
                     b.HasKey("Id");
 
                     b.HasIndex("Email")
-                        .IsUnique();
-
-                    b.HasIndex("Username")
                         .IsUnique();
 
                     b.ToTable("User", (string)null);
@@ -251,6 +243,37 @@ namespace StockApp.Api.Migrations
                     b.Navigation("Item");
 
                     b.Navigation("Location");
+                });
+
+            modelBuilder.Entity("StockApp.Domain.Entities.User", b =>
+                {
+                    b.OwnsOne("StockApp.Domain.ValueObjects.Fullname", "Fullname", b1 =>
+                        {
+                            b1.Property<long>("UserId")
+                                .HasColumnType("bigint");
+
+                            b1.Property<string>("FirstName")
+                                .IsRequired()
+                                .HasMaxLength(30)
+                                .HasColumnType("NVARCHAR")
+                                .HasColumnName("FirstName");
+
+                            b1.Property<string>("LastName")
+                                .IsRequired()
+                                .HasMaxLength(30)
+                                .HasColumnType("NVARCHAR")
+                                .HasColumnName("LastName");
+
+                            b1.HasKey("UserId");
+
+                            b1.ToTable("User");
+
+                            b1.WithOwner()
+                                .HasForeignKey("UserId");
+                        });
+
+                    b.Navigation("Fullname")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("StockApp.Domain.Entities.Item", b =>

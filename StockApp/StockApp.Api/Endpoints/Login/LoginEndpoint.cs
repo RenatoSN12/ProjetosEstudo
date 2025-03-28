@@ -10,10 +10,14 @@ public class LoginEndpoint : IEndpoint
 {
     public static void Map(IEndpointRouteBuilder app)
     {
-        app.MapPost("/login", HandleAsync);
+        app.MapPost("/login", HandleAsync)
+            .WithSummary("Authentication: Login")
+            .WithName("Login")
+            .WithDescription("Logs the user in")
+            .Produces<Response>();
     }
 
-    private static async Task<IResult> HandleAsync(HttpContext context, ISender sender, Command command,
+    private static async Task<IResult> HandleAsync(HttpContext context,ClaimsPrincipal user , ISender sender, Command command,
         CancellationToken cancellationToken = default)
     {
         try
@@ -21,18 +25,13 @@ public class LoginEndpoint : IEndpoint
             var result = await sender.Send(command, cancellationToken);
 
             if (result.IsFailure)
-                return Results.BadRequest(result.Error.Message);
-
-            var claims = new List<Claim>
+                return Results.BadRequest(result.Error);
+            
+            await context.SignInAsync("Cookies", result.Value.Identity!, new AuthenticationProperties
             {
-                new(ClaimTypes.Email, result.Value.Email)
-            };
-
-            var identity = new ClaimsIdentity(claims, "Cookies");
-            var principal = new ClaimsPrincipal(identity);
-
-            await context.SignInAsync("Cookies", principal);
-
+                IsPersistent = true
+            });
+            
             return Results.Ok("Login efetuado com sucesso");
         }
         catch

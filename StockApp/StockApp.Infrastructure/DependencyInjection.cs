@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using StockApp.Domain.Abstractions;
+using StockApp.Domain.Abstractions.Interfaces;
 using StockApp.Domain.Repositories;
 using StockApp.Infrastructure.Data;
 using StockApp.Infrastructure.Repositories;

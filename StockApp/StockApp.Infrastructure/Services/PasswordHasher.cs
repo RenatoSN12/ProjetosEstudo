@@ -1,4 +1,5 @@
 using StockApp.Domain.Abstractions;
+using StockApp.Domain.Abstractions.Interfaces;
 
 namespace StockApp.Infrastructure.Services;
 

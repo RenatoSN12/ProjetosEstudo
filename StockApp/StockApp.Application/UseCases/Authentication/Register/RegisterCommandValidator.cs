@@ -11,10 +11,14 @@ public class RegisterCommandValidator : AbstractValidator<Command>
         RuleFor(x => x.Email)
             .NotEmpty().WithMessage("O e-mail é obrigatório.")
             .EmailAddress().WithMessage("Formato de e-mail inválido.");
+
+        RuleFor(x => x.FirstName)
+            .NotEmpty().WithMessage("É obrigatório informar o nome do usuário.")
+            .MaximumLength(30).WithMessage("O nome do usuário deve possuir no máximo 30 caracteres.");
         
-        RuleFor(x => x.Username)
-            .NotEmpty().WithMessage("O username é obrigatório.")
-            .MinimumLength(3).WithMessage("O username deve ter pelo menos 3 caracteres.");
+        RuleFor(x => x.FirstName)
+            .NotEmpty().WithMessage("É obrigatório informar o sobrenome do usuário")
+            .MaximumLength(30).WithMessage("O nome do usuário deve possuir no mínimo 30 caracteres.");
         
         RuleFor(p => p.Password)
             .NotEmpty().WithMessage("A senha não pode estar vazia.")

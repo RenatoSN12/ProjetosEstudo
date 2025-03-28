@@ -14,7 +14,12 @@ public static class Endpoint
         endpoints.MapGroup("v1/auth/")
             .WithTags("Authentication")
             .MapEndpoint<LoginEndpoint>()
-            .MapEndpoint<RegisterEndpoint>();
+            .MapEndpoint<RegisterEndpoint>()
+            .MapEndpoint<LogoutEndpoint>();
+
+        endpoints.MapGroup("v1/user/")
+            .WithTags("User")
+            .MapEndpoint<UserInfoEndpoint>();
     }
     private static IEndpointRouteBuilder MapEndpoint<TEndpoint>(this IEndpointRouteBuilder app)
         where TEndpoint : IEndpoint

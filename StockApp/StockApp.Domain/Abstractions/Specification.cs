@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+using StockApp.Domain.Abstractions.Interfaces;
 
 namespace StockApp.Domain.Abstractions;
 

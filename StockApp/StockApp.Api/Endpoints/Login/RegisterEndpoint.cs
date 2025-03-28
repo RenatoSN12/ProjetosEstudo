@@ -9,7 +9,11 @@ public class RegisterEndpoint : IEndpoint
 {
     public static void Map(IEndpointRouteBuilder app)
     {
-        app.MapPost("/register", HandleAsync);
+        app.MapPost("/register", HandleAsync)
+            .WithSummary("Authentication: Login")
+            .WithName("Register")
+            .WithDescription("Register a new user")
+            .Produces<Response>();
     }
 
     private static async Task<IResult> HandleAsync(ISender sender, Command command,
