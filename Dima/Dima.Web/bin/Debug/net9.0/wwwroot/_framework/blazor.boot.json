@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Dima.Web",
   "resources": {
-    "hash": "sha256-vQYefdaPIXhpgoASvBZk+5e7coZ8tyAob03USkIBQMs=",
+    "hash": "sha256-4HFmuIhANY33uw1l6K0DdhKgX8LMICKUuPBai0ELSeU=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.esv38zo127.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.cwj0bpb71v.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -204,23 +204,23 @@
       "netstandard.w8gk1pigg1.wasm": "netstandard.wasm",
       "System.Private.CoreLib.6pgvn7a8kc.wasm": "System.Private.CoreLib.wasm",
       "dotnet.js": "dotnet.js",
-      "dotnet.native.8bti36lthm.js": "dotnet.native.js",
-      "dotnet.native.tr0cyonrwt.wasm": "dotnet.native.wasm",
-      "dotnet.runtime.tsg4gsv2hg.js": "dotnet.runtime.js",
+      "dotnet.native.1p93gcv9fh.js": "dotnet.native.js",
+      "dotnet.native.9msu8ucn2h.wasm": "dotnet.native.wasm",
+      "dotnet.runtime.qrl1fuqt3c.js": "dotnet.runtime.js",
       "icudt.oh1zvcfom8.dat": "icudt.dat",
-      "Dima.Core.akz2qu14eh.wasm": "Dima.Core.wasm",
-      "Dima.Core.3ux66uuqwj.pdb": "Dima.Core.pdb",
-      "Dima.Web.7dj2v7btnk.wasm": "Dima.Web.wasm",
-      "Dima.Web.x5m5vtriwn.pdb": "Dima.Web.pdb"
+      "Dima.Core.dkqsqgdkbw.wasm": "Dima.Core.wasm",
+      "Dima.Core.w6b8bccn55.pdb": "Dima.Core.pdb",
+      "Dima.Web.ru5mwxxvo8.wasm": "Dima.Web.wasm",
+      "Dima.Web.x3aje54fjy.pdb": "Dima.Web.pdb"
     },
     "jsModuleNative": {
-      "dotnet.native.8bti36lthm.js": "sha256-HFADmT26AarHu4tMjFaTPxINmQjBJGtdPN+CKjtNMFE="
+      "dotnet.native.1p93gcv9fh.js": "sha256-1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.tsg4gsv2hg.js": "sha256-82FoDmY+LsehdN2u8aSGEutGEKXJHcYaSX/3zptbsCw="
+      "dotnet.runtime.qrl1fuqt3c.js": "sha256-ilTXrnUF4HKbIAFVIYlRmX3ryKNZpGUObkWMF0n2Kcg="
     },
     "wasmNative": {
-      "dotnet.native.tr0cyonrwt.wasm": "sha256-F3/BArijJUydqmwcdWeW3LYyYHBRSu2+pyy8GL1jTV0="
+      "dotnet.native.9msu8ucn2h.wasm": "sha256-Yaw09m1FVxsROJ5Sa9f6SmuJebQT0b3hrKQIbo6qm5A="
     },
     "icu": {
       "icudt.oh1zvcfom8.dat": "sha256-tO5O5YzMTVSaKBboxAqezOQL9ewmupzV2JrB5Rkc8a4="
@@ -428,12 +428,12 @@
       "WindowsBase.tuf34ieu7y.wasm": "sha256-Bd+l972cOS1eVeLzrQNlgD6LPWV1QXBSzJhv8Tx1WGI=",
       "mscorlib.5q5u0swn6q.wasm": "sha256-g9cI1sECkF7bxMqOSB+W0a4utdDsqTrqZzyiAEeA65g=",
       "netstandard.w8gk1pigg1.wasm": "sha256-QFR5QNPfvyZTexW3IA/AFx6ZmIF/TecvOUsSK4gM4po=",
-      "Dima.Core.akz2qu14eh.wasm": "sha256-isLlGgAoTR4Lyz34MTnqarceqhkoRf3jb3WW9iT44Nw=",
-      "Dima.Web.7dj2v7btnk.wasm": "sha256-dUa/kd8+7OjUyOCxa05jhhaGv2fzrYwqEnyYvKkyq6w="
+      "Dima.Core.dkqsqgdkbw.wasm": "sha256-fd9Ec6Ssf0YgTDteLWbA5rrgTUa6W0DAmmJI0UtYwKA=",
+      "Dima.Web.ru5mwxxvo8.wasm": "sha256-I9sVzpK96Xsx+VfWO/+yD0WLV1D2YibuAoEommkC7Co="
     },
     "pdb": {
-      "Dima.Core.3ux66uuqwj.pdb": "sha256-y04wRFqlH50zsjITc8p+rHk9Ea4r0JNK6lMdNFgHJGg=",
-      "Dima.Web.x5m5vtriwn.pdb": "sha256-i71JNLHoicv4cQ6MQHh3oHsPJLWhkKFcitef90AKv48="
+      "Dima.Core.w6b8bccn55.pdb": "sha256-WPo6siDs2oXwI+qpzzDYm7DRYaR4PKYiUh4F65+b2Hc=",
+      "Dima.Web.x3aje54fjy.pdb": "sha256-7bvWcZY15lYdcuyvr918hinInBdiMKxjx5Y3TgkGr9g="
     }
   },
   "cacheBootResources": true,
