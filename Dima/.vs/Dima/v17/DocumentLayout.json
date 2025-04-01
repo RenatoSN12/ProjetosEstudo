@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Dev\\Projetos2\\Projects\\Dima\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D4D8EF8-3D52-420A-A479-DC540FACF91A}|Dima.Api\\Dima.Api.csproj|c:\\dev\\projetos2\\projects\\dima\\dima.api\\handlers\\stripehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D4D8EF8-3D52-420A-A479-DC540FACF91A}|Dima.Api\\Dima.Api.csproj|solutionrelative:dima.api\\handlers\\stripehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4432E6A8-C1DC-4C63-A57F-FF938F80055F}|Dima.Core\\Dima.Core.csproj|c:\\dev\\projetos2\\projects\\dima\\dima.core\\handlers\\istripehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4432E6A8-C1DC-4C63-A57F-FF938F80055F}|Dima.Core\\Dima.Core.csproj|solutionrelative:dima.core\\handlers\\istripehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4432E6A8-C1DC-4C63-A57F-FF938F80055F}|Dima.Core\\Dima.Core.csproj|c:\\dev\\projetos2\\projects\\dima\\dima.core\\requests\\stripe\\gettransactionsbyordernumberrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4432E6A8-C1DC-4C63-A57F-FF938F80055F}|Dima.Core\\Dima.Core.csproj|solutionrelative:dima.core\\requests\\stripe\\gettransactionsbyordernumberrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4432E6A8-C1DC-4C63-A57F-FF938F80055F}|Dima.Core\\Dima.Core.csproj|c:\\dev\\projetos2\\projects\\dima\\dima.core\\requests\\stripe\\createsessionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4432E6A8-C1DC-4C63-A57F-FF938F80055F}|Dima.Core\\Dima.Core.csproj|solutionrelative:dima.core\\requests\\stripe\\createsessionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StripeHandler.cs",
+              "DocumentMoniker": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Api\\Handlers\\StripeHandler.cs",
+              "RelativeDocumentMoniker": "Dima.Api\\Handlers\\StripeHandler.cs",
+              "ToolTip": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Api\\Handlers\\StripeHandler.cs",
+              "RelativeToolTip": "Dima.Api\\Handlers\\StripeHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:33:27.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IStripeHandler.cs",
+              "DocumentMoniker": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Core\\Handlers\\IStripeHandler.cs",
+              "RelativeDocumentMoniker": "Dima.Core\\Handlers\\IStripeHandler.cs",
+              "ToolTip": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Core\\Handlers\\IStripeHandler.cs",
+              "RelativeToolTip": "Dima.Core\\Handlers\\IStripeHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:19:14.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetTransactionsByOrderNumberRequest.cs",
+              "DocumentMoniker": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Core\\Requests\\Stripe\\GetTransactionsByOrderNumberRequest.cs",
+              "RelativeDocumentMoniker": "Dima.Core\\Requests\\Stripe\\GetTransactionsByOrderNumberRequest.cs",
+              "ToolTip": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Core\\Requests\\Stripe\\GetTransactionsByOrderNumberRequest.cs",
+              "RelativeToolTip": "Dima.Core\\Requests\\Stripe\\GetTransactionsByOrderNumberRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T18:00:08.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateSessionRequest.cs",
+              "DocumentMoniker": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Core\\Requests\\Stripe\\CreateSessionRequest.cs",
+              "RelativeDocumentMoniker": "Dima.Core\\Requests\\Stripe\\CreateSessionRequest.cs",
+              "ToolTip": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Core\\Requests\\Stripe\\CreateSessionRequest.cs",
+              "RelativeToolTip": "Dima.Core\\Requests\\Stripe\\CreateSessionRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T17:59:27.787Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
