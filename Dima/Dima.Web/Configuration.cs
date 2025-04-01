@@ -6,7 +6,7 @@ namespace Dima.Web;
 public class Configuration
 {
     public const string HttpClientName = "Dima";
-
+    public static string StripePublicKey { get; set; } = string.Empty;
     public static string BackendUrl { get; set; } = string.Empty;
     
     public static MudTheme Theme = new()

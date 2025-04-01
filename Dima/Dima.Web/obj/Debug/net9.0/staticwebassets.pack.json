@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Projetos\\Dima\\Dima.Web\\wwwroot\\js\\stripe-checkout.js",
+      "PackagePath": "staticwebassets\\js\\stripe-checkout.js"
+    },
+    {
       "Id": "C:\\Projetos\\Dima\\Dima.Web\\wwwroot\\manifest.webmanifest",
       "PackagePath": "staticwebassets\\manifest.webmanifest"
     },

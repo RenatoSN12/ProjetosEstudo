@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Dima.Core.Requests.Stripe;
 
-namespace Dima.Core.Requests.Stripe
+public class GetTransactionByOrderNumberRequest : Request
 {
-    public class GetTransactionsByOrderNumberRequest : Request
-    {
-        public string Number { get; set; } = string.Empty;
-        public string ProductTitle { get; set; } = string.Empty;
-        public string ProductDescription { get; set; } = string.Empty;
-        public long OrderTotal { get; set; }
-    }
+    public string Number { get; set; } = string.Empty;
 }

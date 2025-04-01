@@ -5218,19 +5218,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\juver\\.nuget\\packages\\": {}
+    "C:\\Users\\juver\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Api\\Dima.Api.csproj",
+      "projectUniqueName": "C:\\Projetos\\Dima\\Dima.Api\\Dima.Api.csproj",
       "projectName": "Dima.Api",
-      "projectPath": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Api\\Dima.Api.csproj",
+      "projectPath": "C:\\Projetos\\Dima\\Dima.Api\\Dima.Api.csproj",
       "packagesPath": "C:\\Users\\juver\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Api\\obj\\",
+      "outputPath": "C:\\Projetos\\Dima\\Dima.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\juver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5238,14 +5243,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Core\\Dima.Core.csproj": {
-              "projectPath": "C:\\Dev\\Projetos2\\Projects\\Dima\\Dima.Core\\Dima.Core.csproj"
+            "C:\\Projetos\\Dima\\Dima.Core\\Dima.Core.csproj": {
+              "projectPath": "C:\\Projetos\\Dima\\Dima.Core\\Dima.Core.csproj"
             }
           }
         }
@@ -5258,9 +5264,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
+        "auditMode": "all"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -5312,7 +5318,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\juver\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

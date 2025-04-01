@@ -51,6 +51,7 @@ public static class BuilderExtension
         builder.Services.AddTransient<ITransactionHandler, TransactionHandler>();
         builder.Services.AddTransient<IReportHandler, ReportHandler>();
         builder.Services.AddTransient<IOrderHandler, OrderHandler>();
+        builder.Services.AddTransient<IStripeHandler, StripeHandler>();
         builder.Services.AddTransient<IVoucherHandler, VoucherHandler>();
         builder.Services.AddTransient<IProductHandler, ProductHandler>();
     }
