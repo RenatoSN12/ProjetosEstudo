@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
-using StockApp.Web.DTOs.Requests;
+using StockApp.Domain.DTOs.Requests;
 using StockApp.Web.Extensions;
 using StockApp.Web.Security;
 using StockApp.Web.Services.Abstractions;
@@ -10,8 +10,6 @@ namespace StockApp.Web.Pages.Authentication;
 public partial class RegisterPage : ComponentBase
 {
     #region "Properties"
-
-    private bool IsShow = false; 
     protected bool IsBusy { get; set; } = false;
     protected RegisterRequest InputModel { get; set; } = new();
     

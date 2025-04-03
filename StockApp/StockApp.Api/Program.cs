@@ -17,8 +17,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.AddConfiguration();
 builder.AddCrossOrigin();
 
-builder.Services.AddHttpContextAccessor();
-
 builder.Services.AddDbContext<AppDbContext>(x =>
 {
     x.UseSqlServer(Configuration.ConnectionString, b

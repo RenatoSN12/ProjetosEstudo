@@ -1,6 +1,9 @@
 using System.Net.Http.Json;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Components.Authorization;
+using StockApp.Domain.Abstractions;
+using StockApp.Domain.DTOs.Responses;
+
 namespace StockApp.Web.Security;
 
 public class CookieAuthenticationStateProvider(IHttpClientFactory clientFactory) : AuthenticationStateProvider, ICookieAuthenticationStateProvider
@@ -19,19 +22,26 @@ public class CookieAuthenticationStateProvider(IHttpClientFactory clientFactory)
         _isAuthenticated = false;
         try
         {
-            var userEmail = await _client.GetFromJsonAsync<string>("v1/user/email");
-            if (!string.IsNullOrEmpty(userEmail))
+            var result = await _client.GetFromJsonAsync<Result<UserInfoDto>>("v1/user/info");
+            if (result is not null)
             {
-                var claims = new[] { new Claim(ClaimTypes.Name, userEmail) };
+                var claims = new[]
+                {
+                   new Claim(ClaimTypes.Name, result.Value!.FullName),
+                   new Claim(ClaimTypes.Email, result.Value.Email)
+                };
+                
                 var identity = new ClaimsIdentity(claims, "Cookies");
                 _isAuthenticated = true;
                 return new AuthenticationState(new ClaimsPrincipal(identity));
             }
         }
-        catch (Exception ex)
+        catch
         {
+            _isAuthenticated = false;
             return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity()));
         }
+        _isAuthenticated = false;
         return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity()));
     }
 

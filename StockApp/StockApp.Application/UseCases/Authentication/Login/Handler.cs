@@ -38,6 +38,7 @@ public class Handler(IUserRepository repository, IPasswordHasher passwordHasher,
     {
         var claims = new List<Claim>
         {
+            new(ClaimTypes.Name, user.Fullname.ToString()),
             new(ClaimTypes.Email, user.Email)
         };
 

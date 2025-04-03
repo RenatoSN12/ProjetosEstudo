@@ -612,6 +612,16 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "StockApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/StockApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StockApp.Domain.dll": {}
+        }
       }
     },
     "net9.0/browser-wasm": {
@@ -1224,6 +1234,16 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "StockApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/StockApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StockApp.Domain.dll": {}
         }
       }
     }
@@ -2351,6 +2371,11 @@
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "StockApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../StockApp.Domain/StockApp.Domain.csproj",
+      "msbuildProject": "../StockApp.Domain/StockApp.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2362,7 +2387,8 @@
       "Microsoft.Extensions.Http >= 10.0.0-preview.2.25163.2",
       "Microsoft.NET.ILLink.Tasks >= 9.0.0",
       "Microsoft.NET.Sdk.WebAssembly.Pack >= 9.0.3",
-      "MudBlazor >= 8.3.0"
+      "MudBlazor >= 8.3.0",
+      "StockApp.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2397,7 +2423,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projetos\\StockApp\\StockApp.Domain\\StockApp.Domain.csproj": {
+              "projectPath": "C:\\Projetos\\StockApp\\StockApp.Domain\\StockApp.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

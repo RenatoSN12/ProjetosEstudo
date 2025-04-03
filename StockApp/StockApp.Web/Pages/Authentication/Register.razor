@@ -17,8 +17,29 @@
                     Label="E-mail"
                     HelperText="Campo obrigatório"
                     InputType="InputType.Email"
+                    MaxLength="80"
                     For="@(() => InputModel.Email)"
                     @bind-Value="InputModel.Email"
+                    Class="mb-4"/>
+
+                <MudTextField
+                    T="string"
+                    Label="Primeiro Nome"
+                    HelperText="Campo obrigatório"
+                    InputType="InputType.Text"
+                    MaxLength="30"
+                    For="@(() => InputModel.FirstName)"
+                    @bind-Value="InputModel.FirstName"
+                    Class="mb-4"/>
+                
+                <MudTextField
+                    T="string"
+                    Label="Sobrenome"
+                    MaxLength="30"
+                    HelperText="Campo obrigatório"
+                    InputType="InputType.Text"
+                    For="@(() => InputModel.LastName)"
+                    @bind-Value="InputModel.LastName"
                     Class="mb-4"/>
 
                 <MudTextField

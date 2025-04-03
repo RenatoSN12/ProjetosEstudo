@@ -1,11 +1,11 @@
-using StockApp.Web.DTOs.Requests;
-using StockApp.Web.DTOs.Responses;
+using StockApp.Domain.Abstractions;
+using StockApp.Domain.DTOs.Requests;
 
 namespace StockApp.Web.Services.Abstractions;
 
 public interface IAuthService
 {
-    Task<Response<string>> LoginAsync(LoginRequest request);
+    Task<Result> LoginAsync(LoginRequest request);
     Task LogoutAsync();
-    Task<Response<string>> RegisterAsync(RegisterRequest request);
+    Task<Result> RegisterAsync(RegisterRequest request);
 }

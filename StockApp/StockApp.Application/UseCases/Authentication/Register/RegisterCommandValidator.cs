@@ -16,7 +16,7 @@ public class RegisterCommandValidator : AbstractValidator<Command>
             .NotEmpty().WithMessage("É obrigatório informar o nome do usuário.")
             .MaximumLength(30).WithMessage("O nome do usuário deve possuir no máximo 30 caracteres.");
         
-        RuleFor(x => x.FirstName)
+        RuleFor(x => x.LastName)
             .NotEmpty().WithMessage("É obrigatório informar o sobrenome do usuário")
             .MaximumLength(30).WithMessage("O nome do usuário deve possuir no mínimo 30 caracteres.");
         

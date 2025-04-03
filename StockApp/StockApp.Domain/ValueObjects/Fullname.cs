@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using StockApp.Domain.Abstractions;
 
 namespace StockApp.Domain.ValueObjects;
@@ -12,7 +13,9 @@ public sealed record Fullname
         FirstName = firstName;
         LastName = lastName;
     }
-
+    
+    [JsonConstructor]
+    private Fullname(){} // Apenas para deserialização
     public static Result<Fullname> Create(string firstName, string lastName)
     {
         if(firstName.Any(char.IsDigit) || lastName.Any(char.IsDigit))

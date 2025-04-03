@@ -1,9 +1,16 @@
-using System.Diagnostics.CodeAnalysis;
+using System.Runtime.InteropServices.JavaScript;
+using System.Text.Json.Serialization;
 
 namespace StockApp.Domain.Abstractions;
 
+[JsonDerivedType(typeof(Result<>), typeDiscriminator: "generic")]
 public class Result
 {
+    [JsonConstructor]
+    public Result()
+    {
+        Error = Error.None;
+    }
     protected Result(bool isSuccess, Error error)
     {
         switch (isSuccess)
@@ -21,9 +28,9 @@ public class Result
         }
     }
 
-    public bool IsSuccess { get; }
+    public bool IsSuccess { get; set; }
     public bool IsFailure => !IsSuccess;
-    public Error Error { get; }
+    public Error Error { get; set;  }
 
     public static Result Success() => new(true, Error.None);
     public static Result Failure(Error error) => new(false, error);
@@ -37,13 +44,12 @@ public class Result
 
 public class Result<T> : Result
 {
-    private readonly T? _value;
+    [JsonConstructor]
+    public Result(T? value, bool isSuccess, Error error) : base(isSuccess, error)
+    {
+        Value = value;
+    }
 
-    protected internal Result(T? value, bool isSuccess, Error error) : base(isSuccess, error)
-        => _value = value;
-
-    [NotNull]
-    public T Value => _value! ?? throw new InvalidOperationException("Result has no value");
-
-    public static implicit operator Result<T>(T? value) => Create(value);
+    [JsonPropertyName("value")]
+    public T? Value { get; private set; }
 }

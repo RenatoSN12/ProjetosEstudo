@@ -1,0 +1,37 @@
+@page "/logout"
+@using StockApp.Web.Security
+@using StockApp.Web.Services.Abstractions
+@layout HeadlessLayout
+
+<MudContainer Class="fullscreen-container d-flex align-center justify-center">
+    <MudPaper Class="pa-8 mt-4" Elevation="20">
+        <div class="d-flex justify-center pb-8 pt-8">
+            <img src="imgs/logo.png" alt="Stock - Controle de Estoque" width="100"/>
+        </div>
+        <MudAlert Severity="Severity.Info" Class="d-flex justify-center align-center">
+            <div class="d-flex align-center">
+                <MudText Typo="Typo.subtitle2" Class="mr-2">Finalizando Sessão...</MudText>
+                <MudProgressCircular Indeterminate="true" Color="Color.Info"></MudProgressCircular>
+            </div>
+        </MudAlert>
+    </MudPaper>
+</MudContainer>
+<LoginRedirect/>
+
+@code{
+
+    [Inject] public ICookieAuthenticationStateProvider AuthenticationStateProvider { get; set; } = null!;
+    [Inject] public IAuthService AuthService { get; set; } = null!;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        if (await AuthenticationStateProvider.CheckAuthenticatedAsync())
+        {
+            await AuthService.LogoutAsync();
+            await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            AuthenticationStateProvider.NotifyAuthenticationStateChanged();
+        }
+        await base.OnInitializedAsync();
+    }
+
+}

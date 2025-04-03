@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
-using StockApp.Web.DTOs.Requests;
+using StockApp.Domain.DTOs.Requests;
 using StockApp.Web.Security;
 using StockApp.Web.Services.Abstractions;
 
@@ -56,7 +56,7 @@ public partial class LoginPage : ComponentBase
                 NavigationManager.NavigateTo("/");
             }
             else
-                Snackbar.Add(result.Message ?? "Falha ao realizar o login.", Severity.Error);                
+                Snackbar.Add(result.Error.Message, Severity.Error);                
         }
         catch (Exception ex)
         {

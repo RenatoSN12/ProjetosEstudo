@@ -1,6 +1,8 @@
-namespace StockApp.Web.Components;
+@inject NavigationManager NavigationManager
 
-public class LoginRedirect
-{
-    
+@code {
+    protected override void OnInitialized()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
 }
