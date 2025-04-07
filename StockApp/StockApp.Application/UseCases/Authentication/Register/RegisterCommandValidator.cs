@@ -4,7 +4,7 @@ namespace StockApp.Application.UseCases.Authentication.Register;
 
 using FluentValidation;
 
-public class RegisterCommandValidator : AbstractValidator<Command>
+public class RegisterCommandValidator : AbstractValidator<RegisterCommand>
 {
     public RegisterCommandValidator()
     {

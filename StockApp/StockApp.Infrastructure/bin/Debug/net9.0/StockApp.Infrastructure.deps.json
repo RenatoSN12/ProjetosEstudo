@@ -11,7 +11,8 @@
           "BCrypt.Net-Next": "4.0.3",
           "Microsoft.EntityFrameworkCore.Design": "9.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
-          "StockApp.Domain": "1.0.0"
+          "StockApp.Domain": "1.0.0",
+          "Microsoft.Extensions.Configuration": "9.0.0.0"
         },
         "runtime": {
           "StockApp.Infrastructure.dll": {}
@@ -1019,6 +1020,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Microsoft.Extensions.Configuration/9.0.0.0": {
+        "runtime": {
+          "Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52809"
+          }
+        }
       }
     }
   },
@@ -1583,6 +1592,11 @@
     },
     "StockApp.Domain/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration/9.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

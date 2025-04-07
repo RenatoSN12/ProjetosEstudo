@@ -13,9 +13,9 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
         services.AddTransient<IUnitOfWork, UnitOfWork>();
-        services.AddTransient<IItemRepository, ItemRepository>();
         services.AddTransient<IUserRepository, UserRepository>();
         services.AddTransient<IPasswordHasher, PasswordHasher>();
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
         return services;
     }
 }

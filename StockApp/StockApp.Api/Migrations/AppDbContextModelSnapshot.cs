@@ -34,7 +34,7 @@ namespace StockApp.Api.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("NVARCHAR");
 
-                    b.Property<short>("IsActive")
+                    b.Property<short>("Status")
                         .HasColumnType("SMALLINT");
 
                     b.Property<string>("Title")

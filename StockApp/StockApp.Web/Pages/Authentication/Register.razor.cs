@@ -62,12 +62,12 @@ public partial class RegisterPage : ComponentBase
             var result = await Handler.RegisterAsync(InputModel);
             if (result.IsSuccess)
             {
-                Snackbar.Add(result.Message!, Severity.Success);
-                NavigationManager.NavigateTo("/login");
+                Snackbar.Add("Registro realizado com sucesso!", Severity.Success);
+                NavigationManager.NavigateTo("/");
             }
             else
             {
-                foreach (var error in result.Message?.SplitErrors()!)
+                foreach (var error in result.Error.Message?.SplitErrors()!)
                     Snackbar.Add(error, Severity.Error);
             }
         }

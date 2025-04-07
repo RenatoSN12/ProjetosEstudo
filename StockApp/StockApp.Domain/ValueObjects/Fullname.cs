@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using StockApp.Domain.Abstractions;
+using StockApp.Domain.Abstractions.Results;
 
 namespace StockApp.Domain.ValueObjects;
 

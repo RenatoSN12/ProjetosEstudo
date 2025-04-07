@@ -1,10 +1,10 @@
 using StockApp.Domain.Entities;
 using StockApp.Domain.Specification.Categories;
-using StockApp.Domain.Specification.Items;
 
 namespace StockApp.Domain.Repositories;
 
-public interface ICategoryRepository
+public interface ICategoryRepository : IRepository<Category>
 {
-    Task<List<Category>> GetAllByUserAsync(GetAllCategoriesByUserSpecification specification, CancellationToken cancellationToken = default);
+    Task<List<Category>> GetAllByUserAsync(GetAllCategoriesByUserSpecification specification, int pageNumber,
+        int pageSize, CancellationToken cancellationToken = default);
 }

@@ -2,6 +2,7 @@ using System.Net.Http.Json;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Components.Authorization;
 using StockApp.Domain.Abstractions;
+using StockApp.Domain.Abstractions.Results;
 using StockApp.Domain.DTOs.Responses;
 
 namespace StockApp.Web.Security;
@@ -22,12 +23,12 @@ public class CookieAuthenticationStateProvider(IHttpClientFactory clientFactory)
         _isAuthenticated = false;
         try
         {
-            var result = await _client.GetFromJsonAsync<Result<UserInfoDto>>("v1/user/info");
+            var result = await _client.GetFromJsonAsync<Result<UserDto?>>("api/user/info");
             if (result is not null)
             {
                 var claims = new[]
                 {
-                   new Claim(ClaimTypes.Name, result.Value!.FullName),
+                   new Claim(ClaimTypes.Name, $"{result.Value!.Firstname} {result.Value!.Lastname}"),
                    new Claim(ClaimTypes.Email, result.Value.Email)
                 };
                 

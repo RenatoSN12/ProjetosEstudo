@@ -1,4 +1,5 @@
 using StockApp.Domain.Abstractions;
+using StockApp.Domain.Abstractions.Results;
 using StockApp.Domain.DTOs.Requests;
 
 namespace StockApp.Web.Services.Abstractions;

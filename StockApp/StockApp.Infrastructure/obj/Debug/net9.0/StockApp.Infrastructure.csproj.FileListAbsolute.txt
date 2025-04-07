@@ -2,6 +2,7 @@ C:\Projetos\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Infrastru
 C:\Projetos\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Infrastructure.runtimeconfig.json
 C:\Projetos\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Infrastructure.dll
 C:\Projetos\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Infrastructure.pdb
+C:\Projetos\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
 C:\Projetos\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Domain.dll
 C:\Projetos\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Domain.pdb
 C:\Projetos\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.csproj.AssemblyReference.cache

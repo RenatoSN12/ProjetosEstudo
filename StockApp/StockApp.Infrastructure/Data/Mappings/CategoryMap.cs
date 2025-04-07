@@ -22,7 +22,7 @@ public class CategoryMap : IEntityTypeConfiguration<Category>
             .HasColumnType("NVARCHAR")
             .HasMaxLength(500);
 
-        builder.Property(x => x.IsActive)
+        builder.Property(x => x.Status)
             .IsRequired()
             .HasColumnType("SMALLINT");
         
