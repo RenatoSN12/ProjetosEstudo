@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
-using StockApp.Domain.DTOs.Requests;
+using StockApp.Domain.DTOs.Requests.Authentication;
 using StockApp.Web.Security;
 using StockApp.Web.Services.Abstractions;
 

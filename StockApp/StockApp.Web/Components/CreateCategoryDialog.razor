@@ -1,0 +1,15 @@
+@inherits CreateCategoryDialogBase
+
+<EditForm Model="Model" OnValidSubmit="OnValidSubmitAsync">
+    <MudDialog>
+        <DialogContent>
+            <MudTextField Label="Nome da Categoria" @bind-Value="Model.Title" Required="true"/>
+            <MudTextField Label="Descrição" @bind-Value="Model.Description"/>
+        </DialogContent>
+        <DialogActions>
+            <MudButton OnClick="Cancel">Cancelar</MudButton>
+            <MudButton ButtonType="ButtonType.Submit" Color="Color.Primary">Salvar</MudButton>
+        </DialogActions>
+    </MudDialog>
+</EditForm>
+

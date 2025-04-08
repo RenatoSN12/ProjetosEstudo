@@ -24,6 +24,8 @@ public class CategoryRepository(AppDbContext context) : ICategoryRepository
 
         return categories;
     }
+    public async Task AddAsync(Category category, CancellationToken cancellationToken)
+        => await context.Categories.AddAsync(category, cancellationToken);
     public async Task<int> GetTotalCount(ISpecification<Category> specification, CancellationToken cancellationToken = default)
         => await context.Categories.AsNoTracking().Where(specification.ToExpression()).CountAsync(cancellationToken);
 }

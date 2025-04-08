@@ -1,6 +1,4 @@
 using MediatR;
-using Microsoft.AspNetCore.Http;
-using StockApp.Application.Extensions;
 using StockApp.Domain.Abstractions;
 using StockApp.Domain.Abstractions.Results;
 using StockApp.Domain.DTOs.Responses;
@@ -16,18 +14,16 @@ public sealed class GetAllCategoriesQueryHandler(ICategoryRepository repository)
     {
         try
         {
-            var spec = new GetAllCategoriesByUserSpecification(request.Email);
+            var spec = new GetAllCategoriesByUserSpecification(request.UserId);
             var categories = await repository
                 .GetAllByUserAsync(spec, request.PageNumber, request.PageSize, cancellationToken);
 
             var totalCount = await repository.GetTotalCount(spec,cancellationToken);
 
-            return PagedResult<List<CategoryDto>?>.Success(categories.Select(x => new CategoryDto
-                {
-                    Id = x.Id,
-                    Title = x.Title
-                }).ToList(),
-                request.PageNumber, request.PageSize, totalCount);
+            return PagedResult<List<CategoryDto>?>.Success(
+                categories.Select(x => new CategoryDto(x.Id, x.Title)).ToList(),
+                request.PageNumber, request.PageSize, totalCount
+            );
         }
         catch
         {

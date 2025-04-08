@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace StockApp.Domain.DTOs.Requests;
+namespace StockApp.Domain.DTOs.Requests.Authentication;
 
 public class LoginRequest
 {

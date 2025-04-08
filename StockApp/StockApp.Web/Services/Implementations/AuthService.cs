@@ -2,7 +2,7 @@ using System.Net.Http.Json;
 using System.Text;
 using StockApp.Domain.Abstractions;
 using StockApp.Domain.Abstractions.Results;
-using StockApp.Domain.DTOs.Requests;
+using StockApp.Domain.DTOs.Requests.Authentication;
 using StockApp.Domain.DTOs.Responses;
 using StockApp.Web.Services.Abstractions;
 

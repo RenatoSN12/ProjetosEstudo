@@ -1,4 +1,4 @@
-namespace StockApp.Domain.DTOs.Requests;
+namespace StockApp.Domain.DTOs.Requests.Authentication;
 
 public record RegisterRequest
 {

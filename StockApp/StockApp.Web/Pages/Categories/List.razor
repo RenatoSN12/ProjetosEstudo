@@ -1,4 +1,4 @@
-@page "/categorias"
+@page "/categories"
 @inherits ListCategoriesPage
 
 <MudText Typo="Typo.h3">Categorias</MudText>
@@ -8,7 +8,7 @@
         Variant="Variant.Filled"
         Color="Color.Primary"
         StartIcon="@Icons.Material.TwoTone.Add"
-        Href="/categorias/adicionar">
+        OnClick="@OpenNewCategoryDialog">
         Nova Categoria
     </MudButton>
 </div>

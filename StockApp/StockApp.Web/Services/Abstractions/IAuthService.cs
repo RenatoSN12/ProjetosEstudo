@@ -1,6 +1,6 @@
 using StockApp.Domain.Abstractions;
 using StockApp.Domain.Abstractions.Results;
-using StockApp.Domain.DTOs.Requests;
+using StockApp.Domain.DTOs.Requests.Authentication;
 
 namespace StockApp.Web.Services.Abstractions;
 

@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
+using StockApp.Domain.DTOs.Requests.Categories;
 using StockApp.Domain.DTOs.Responses;
 using StockApp.Domain.Entities;
+using StockApp.Web.Components;
 using StockApp.Web.Services.Abstractions;
 
 namespace StockApp.Web.Pages.Categories;
@@ -47,6 +49,14 @@ public partial class ListCategoriesPage : ComponentBase
     #endregion
 
     #region Methods
+    
+    protected async Task OpenNewCategoryDialog()
+    {
+        var parameters = new DialogParameters { { "Model", new CreateCategoryDto() } };
+        
+        var options = new DialogOptions { CloseOnEscapeKey = true, MaxWidth = MaxWidth.Small, FullWidth = true };
+        await DialogService.ShowAsync<CreateCategoryDialog>("Nova Categoria", parameters, options);
+    }
 
     public void OnDeleteButtonClickedAsync(long id, string title)
     {
