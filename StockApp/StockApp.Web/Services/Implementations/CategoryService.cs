@@ -26,21 +26,10 @@ public class CategoryService(IHttpClientFactory httpClientFactory) : ICategorySe
     public async Task<Result<CategoryDto?>> CreateCategoryAsync(CreateCategoryDto request, CancellationToken cancellationToken = default)
     {
         var result = await _httpClient.PostAsJsonAsync("/api/categories", request, cancellationToken);
+        
+         var readResult = await result.Content.ReadFromJsonAsync<Result<CategoryDto?>>(cancellationToken: cancellationToken);
 
-        Result<CategoryDto?> readResult = null;
-        
-        try
-        {
-            var json = await result.Content.ReadAsStringAsync();
-            readResult = await result.Content.ReadFromJsonAsync<Result<CategoryDto?>>(cancellationToken: cancellationToken);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            throw;
-        }
-        
-        if (readResult is null)
+         if (readResult is null)
             return Result.Failure<CategoryDto?>(new Error("400", "Ocorreu um erro inesperado ao criar a nova categoria."));
         
         return readResult.IsFailure 

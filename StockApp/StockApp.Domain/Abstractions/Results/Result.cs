@@ -20,13 +20,10 @@ public record Result
         Error = error;
     }
 
-    [JsonIgnore]
     public bool IsSuccess { get; set; }
     
-    [JsonIgnore]
     public bool IsFailure => !IsSuccess;
     
-    [JsonIgnore]
     public Error Error { get; set; }
 
     public static Result Success() => new(true, Error.None);
