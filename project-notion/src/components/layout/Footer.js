@@ -10,7 +10,7 @@ function Footer(){
         </ul>
 
         <p className={styles.copy_right}>
-            Notion do Erick &copy; 2025
+            Protótipo Notion &copy; 2025
         </p>
         </footer>
     )
