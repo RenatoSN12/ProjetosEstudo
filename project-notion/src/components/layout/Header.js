@@ -14,7 +14,7 @@ function Header() {
     <header className={styles.header}>
       <div className={`${styles.logo} ${isMenuOpen ? styles.logoHidden : ""}`}>
         <img src={logo} alt="logo-notion"/>
-        <h1>Notion do Erick</h1>
+        <h1>Protótipo Notion</h1>
       </div>
     </header>
   );
