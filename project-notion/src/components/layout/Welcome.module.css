@@ -77,3 +77,9 @@
     cursor: pointer;
     transform: scale(1.05);
 }
+
+@media (max-width: 1000px){
+    .Info{
+        width: 80%;
+    }
+}
