@@ -16,6 +16,11 @@
     margin: 0 1em
 }
 
+.footer li a{
+    text-decoration: none;
+    color: white;
+}
+
 .footer li:hover{
     color: #61dafb;
 }

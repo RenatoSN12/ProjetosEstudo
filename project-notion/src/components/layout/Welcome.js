@@ -9,8 +9,11 @@ function Welcome() {
                 <h1>Bem-vindo ao <span>Controle Financeiro</span></h1>
                 <p><span>Gerencie</span> suas finanças com <span>facilidade</span> e <span>eficiência</span>.
                     Tenha tudo organizado <span>num só lugar</span>, com a ferramenta mais <span>simples </span>
-                    e <span>prática</span> que você vai encontrar.</p>
-                <button>Comece agora!</button>
+                    e <span>prática</span> que você vai encontrar.
+                </p>
+                <a href="https://pay.hotmart.com/B98619099P?off=blbve33y" target="_blank" rel="noopener noreferrer" className={styles.Button}>
+                    Comece agora!
+                </a>
             </div>
         </section>
     )

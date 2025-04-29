@@ -56,7 +56,10 @@
     width: 50%;
 }
 
-.Info button {
+.Info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #007BFF;
     border: none;
     padding: 1em 2em;
@@ -67,9 +70,10 @@
     height: 4em;
     font-size: 1em;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.Info button:hover {
+.Info a:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
