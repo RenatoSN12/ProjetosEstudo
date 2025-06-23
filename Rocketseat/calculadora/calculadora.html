@@ -94,15 +94,60 @@
 
       const CalculatorContext = React.createContext();
 
+      function useCalculator() {
+        const [operation, setOperation] = React.useState("");
+        const [result, setResult] = React.useState("");
+        const { updateHistory } = React.useContext(CalculatorContext);
+
+        function doOperation(input) {
+          if (input === "C") {
+            setOperation("");
+            setResult("");
+            return;
+          }
+
+          if (input === "CE") {
+            setResult("");
+            setOperation(operation.slice(0, -1));
+            return;
+          }
+
+          if (input === "=") {
+            const operationResult = eval(operation.replace(/,/g, "."));
+            const parsedResult = operationResult
+              .toString()
+              ?.replace(/\./g, ",");
+
+            setResult(parsedResult);
+            updateHistory(operation, parsedResult);
+
+            return;
+          }
+
+          if (result) {
+            setOperation(isNaN(input) ? `${result}${input}` : input);
+            setResult("");
+            return;
+          }
+
+          if (input === "," && !operation.endsWith(",")) {
+            setOperation(`${operation},`);
+            return;
+          }
+
+          setOperation(`${operation}${input}`);
+        }
+
+        return {
+          operation,
+          result,
+          doOperation,
+        };
+      }
+
       function CalculatorProvider({ children }) {
         const [history, setHistory] = React.useState([]);
-
         const historyStorageKey = "history";
-
-        React.useEffect(() => {
-          const savedHistory = localStorage.getItem("history");
-          setHistory(savedHistory);
-        }, []);
 
         function updateHistory(operation, parsedResult) {
           setHistory((prev) => {
@@ -114,6 +159,11 @@
             return updatedHistory;
           });
         }
+
+        React.useEffect(() => {
+          const savedHistory = localStorage.getItem("history");
+          setHistory(JSON.parse(savedHistory || "[]"));
+        }, []);
 
         return (
           <CalculatorContext.Provider value={{ history, updateHistory }}>
@@ -155,7 +205,7 @@
               Histórico de Operações
             </Text>
 
-            {history.length > 0 ? (
+            {history?.length > 0 ? (
               <ul className="flex flex-col gap-3">
                 {history.map((value, index) => (
                   <Text key={`item-${index}`} as="li">
@@ -173,47 +223,10 @@
       }
 
       function Calculator() {
-        const [operation, setOperation] = React.useState("");
-        const [result, setResult] = React.useState("");
-        const { updateHistory } = React.useContext(CalculatorContext);
+        const { operation, result, doOperation } = useCalculator();
 
         function handleInputClick(input) {
-          if (input === "C") {
-            setOperation("");
-            setResult("");
-            return;
-          }
-
-          if (input === "CE") {
-            setResult("");
-            setOperation(operation.slice(0, -1));
-            return;
-          }
-
-          if (input === "=") {
-            const operationResult = eval(operation.replace(/,/g, "."));
-            const parsedResult = operationResult
-              .toString()
-              ?.replace(/\./g, ",");
-
-            setResult(parsedResult);
-            updateHistory(operation, parsedResult);
-
-            return;
-          }
-
-          if (result) {
-            setOperation(isNaN(input) ? `${result}${input}` : input);
-            setResult("");
-            return;
-          }
-
-          if (input === "," && !operation.endsWith(",")) {
-            setOperation(`${operation},`);
-            return;
-          }
-
-          setOperation(`${operation}${input}`);
+          doOperation(input);
         }
 
         return (
@@ -245,8 +258,8 @@
         return (
           <div
             className={`bg-(--background)
-               shadow-(--shadow) 
-               rounded-2xl 
+               shadow-(--shadow)
+               rounded-2xl
                ${className ?? ""}`}
           >
             {children}
