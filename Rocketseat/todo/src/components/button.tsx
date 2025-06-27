@@ -4,7 +4,10 @@ import Text from "./text";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const buttonVariants = cva(
-  "flex items-center justify-center cursor-pointer transition rounded-lg group gap-2",
+  `
+    flex items-center justify-center cursor-pointer
+    transition rounded-lg group gap-2
+  `,
   {
     variants: {
       variant: {
