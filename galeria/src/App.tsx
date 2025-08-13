@@ -5,16 +5,11 @@ import ChevronRightIcon from "./assets/icons/chevron-right.svg?react";
 import Badge from "./components/badge";
 import Alert from "./components/alert";
 import Divider from "./components/divider";
-import InputSingleFile from "./components/input-single-file";
-import { useForm } from "react-hook-form";
-import ImageFilePreview from "./components/image-file-preview";
+import { Dialog, DialogBody, DialogContent, DialogFooter, DialogHeader, DialogTrigger } from "./components/dialog";
+import Text from "./components/text";
+import { DialogClose } from "@radix-ui/react-dialog";
 
 export default function App() {
-
-	const form = useForm();
-	const file = form.watch("file");
-	const fileSource = file?.[0] ? URL.createObjectURL(file[0]) : undefined;
- 
 	return (
 		<div className="grid gap-7 p-6">
 			<div className="flex gap-3">
@@ -54,14 +49,29 @@ export default function App() {
 			</div>
 
 			<div>
-				<Divider />
+			  <Dialog>
+				<DialogTrigger asChild>
+				  <Button>Abrir Modal</Button>
+				</DialogTrigger>
+				<DialogContent>
+				  <DialogHeader>Teste Dialog</DialogHeader>
+				  <DialogBody>
+					<Text>
+					  Teste Conteúdo do Dialog
+					</Text>
+				  </DialogBody>
+				  <DialogFooter>
+					<DialogClose asChild>
+					  <Button variant="secondary">Cancelar</Button>
+					</DialogClose>
+					<Button>Adicionar</Button>
+				  </DialogFooter>
+				</DialogContent>
+			  </Dialog>
 			</div>
+
 			<div>
-			  <InputSingleFile 
-			  	replaceBy={<ImageFilePreview src={fileSource} alt="Imagem"/>}
-			    maxFileSizeInMB={50} 
-				allowedExtensions={['png', 'jpg', 'jpeg', 'webp']} 
-				form={form} {...form.register('file')}/>
+				<Divider />
 			</div>
 		</div>
 	);
