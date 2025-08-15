@@ -47,7 +47,7 @@ export const inputTextIconsVariants = tv({
 
 interface InputTextProps extends VariantProps<typeof inputTextWrapperVariants>, Omit<React.ComponentProps<"input">, "size" | "disabled"> {
   icon?: React.ComponentProps<typeof Icon>["svg"],
-  error: React.ReactNode;
+  error?: React.ReactNode;
 }
 
 export default function InputText({size, disabled, className, icon, error, ...props}: InputTextProps) {
